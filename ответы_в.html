@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width,initial-scale=1.0'>
+		<title>О компании</title>
+
+<link rel='stylesheet' href='вопр.css'>
+</head>
+<body>
+<h1>Ответы на самые популярные вопросы</h1>
+<p class='o'>Разбираем самые популярные вопросы о поиске работы в IT. Как не перегореть и сохранять мотивацию к изучению?</p>
+<details open>
+    <summary>Каковы шансы устроиться на работу после обучения в c<i class='fa fa-circle'></i>m.Programm?</summary>
+    <p>Важно понимать, что обучение дает базовые знания и немного практики. Здесь нет 100% вероятности трудоустройства, но пройдя наш курс вы сможете понять насколько сильно в вас желание развиваться в IT.</p>
+</details>
+<details>
+    <summary>Как понять какое направление выбрать?</summary>
+    <p>Вы можете пройти наш бесплатный урок по каждому направлению, но, конечно, важную роль играет ваше текущее место работы</p>
+</details>
+<details>
+    <summary>Возможно ли найти хорошую работу без высшего образования?</summary>
+	<p>Высшее образования помогает не всегда, но оно может быть вашим плюсом, так как вы потратили много времени на обучение, что покажет будущему работодателю ваше трудолюбие. Но, важно сколько у вас отведено времени на обучение. В некоторых случаях самостоятельное обучение может быть эффективнее.</p>
+</details>
+<details>
+    <summary>Есть ли переизбыток специалистов?</summary>
+	<p>Переизбытка сейчас нет и раньше не было, каждая сфера нуждается в кваллифицированных специалистах.</p>
+</details>
+<details>
+    <summary>Важен ли английский?</summary>
+	<p>В большинстве случаев достаточно знание технического английского на уровне чтения документаций.</p>
+</details>
+<details>
+    <summary>Минусы в сфере IT</summary>
+	<p>Много работы, высокая скорость изменений в стеке технологий, необходимость постоянно обучаться.</p>
+</details>
+
+<details>
+    <summary>Стоит ли быстро выходить на рынок труда, или нужно дольше учиться?</summary>
+	<p>Если вы имеете пару проектов, то можно смело ходить на собеседования, если требования к соискателю соответствует тем знаниям, которые вы приобрели.</p>
+</details>
+
+<details>
+    <summary>Что нужно писать в резюме?</summary>
+	<p>Важно сделать акцент на стеке технологий, отметить ранние и действующие проекты, писать все понятно, не создавая сложных предложений.</p>
+</details>
+<details>
+    <summary>А если я правда ничего не знаю?Или мне так кажется?</summary>
+	<p>Важно правильно оценивать свой вклад в общее дело.Если вы развиваетесь не раз в месяц, а хотя бы 3 раза в неделю что-то изучаете и практикуете, у вас будут знания.</p>
+</details>
+<h2>Если у вас остались вопросы, то ниже вы сможете задать свой вопрос</h2>
+<div class="container contact-form">
+            <div class="contact-image">
+  
+            </div>
+				<form action="консульт_res.php" method="post" enctype="multipart/form-data">
+					<h3>Форма обратной связи</h3>
+				    <div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" name="txtName" class="form-control" placeholder="Имя *" value="" />
+							</div>
+							<div class="form-group">
+								<input type="text" name="txtEmail" class="form-control" placeholder="e-mail *" value="" />
+							</div>
+							<div class="form-group">
+								<input type="text" name="txtPhone" class="form-control" placeholder="Телефон *" value="" />
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<textarea name="txtMsg" class="form-control" placeholder="Сообщение *" style="width: 100%; height: 150px;"></textarea>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="submit" name="btnSubmit" class="btnContact" value="Отправить" />
+							</div>
+						</div>
+					</div>
+				</form>
+		</div>
+		<div style="text-align:center;margin-bottom:3%;margin-top:3%;"><a class="back" onclick="javascript:history.back(); return false;">Назад</a></div>
+<script>
+var details = document.querySelectorAll("details");
+for(i=0;i<details.length;i++) {
+  details[i].addEventListener("toggle", accordion);
+}
+function accordion(event) {
+  if (!event.target.open) return;
+  var details = event.target.parentNode.children;
+  for(i=0;i<details.length;i++) {
+    if (details[i].tagName != "DETAILS" || !details[i].hasAttribute('open') || event.target == details[i]) continue;
+    details[i].removeAttribute("open");
+  }
+}
+</script>
+</body>
+</html>

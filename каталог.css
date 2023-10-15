@@ -1,0 +1,147 @@
+body
+{
+	background-image:url(фон_2.jpg);
+	background-attachment:fixed; 
+	background-size:cover;
+	background-size: no-repeat;
+    background-position: center;
+	-webkit-font-smoothing:antialiased;
+	-webkit-overflow-scrolling:touch;
+	margin-top:70px;
+}
+html{
+  cursor: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 512 512' style='enable-background:new 0 0 512.011 512.011;' xml:space='preserve'%3E %3Cpath fill='DeepSkyBlue' d='M434.215,344.467L92.881,3.134c-4.16-4.171-10.914-4.179-15.085-0.019  c-2.011,2.006-3.139,4.731-3.134,7.571v490.667c0.003,4.382,2.685,8.316,6.763,9.92c4.081,1.603,8.727,0.545,11.712-2.667  l135.509-145.92h198.016c5.891,0.011,10.675-4.757,10.686-10.648C437.353,349.198,436.226,346.473,434.215,344.467z'/%3E %3C/svg%3E"), pointer;
+}
+h4
+{
+	font-size:20px;
+	text-align:center;
+	font-weight:bold;
+	margin-top:25%;
+}
+p
+{
+	font-size:16px;
+	text-align:center;
+}
+.gallery-title{
+    font-size: 36px;
+    color: #2d2d2d;
+    text-align: center;
+    font-weight: bold;
+	font-family:'Raleway';
+}
+.filter-button{
+    font-size: 18px;
+    border: 2px solid #2d2d2d;
+	padding:5px 10px;
+    text-align: center;
+    color: #2d2d2d;
+	margin-top:30px;
+    margin-bottom: 30px;
+	font-weight:bold;
+	background:transparent;
+}
+.filter-button:hover,
+.filter-button:focus,
+.filter-button.active{
+    color: #ffa742;
+    background-color:#2d2d2d;
+	outline:none;
+}
+.gallery_product{
+    margin: 0px;
+	padding:0;
+	position:relative;
+}
+.gallery_product .img-info{
+	position: absolute;
+    background: rgba(0,0,0,0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+	overflow:hidden;
+	color:#fff;
+	top:0;
+	display:none;
+	   -webkit-transition: 2s;
+    transition: 2s;
+}
+
+.gallery_product:hover .img-info{
+	display:block;
+   -webkit-transition: 2s;
+    transition: 2s;
+}
+.back
+{
+	font-size: 18px;
+    border: 2px solid #2d2d2d;
+    text-align: center;
+    color: #2d2d2d;
+	padding:0.8%;
+	font-weight:bold;
+	background:transparent;
+	margin:0 auto;
+}
+.back:hover,
+.back:focus,
+.back.active{
+    color: #ffa742;
+    background-color:#2d2d2d;
+	outline:none;
+}
+/*адаптивность*/
+@media (min-width: 275px) and (max-width: 575px){
+	.gallery-title 
+	{
+		font-size:20px;
+		margin-top:0%;
+	}
+	.filter-button
+	{
+		font-size:10px;
+		padding:0px 5px;
+		margin-top:10px;
+		margin-bottom:0;
+	}
+	.back
+	{
+		font-size:10px;
+	}
+}
+
+@media (min-width: 575px) and (max-width: 815px){
+	.gallery-title 
+	{
+		font-size:24px;
+		margin-top:0%;
+	}
+	.filter-button
+	{
+		font-size:14px;
+		padding:5px 10px;
+		margin-top:10px;
+		margin-bottom:0;
+	}
+	.back
+	{
+		font-size:14px;
+	}
+}
+
+@media (min-width: 815px) and (max-width: 1100px){
+	.gallery-title 
+	{
+		font-size:28px;
+	}
+	.filter-button
+	{
+		font-size:16px;
+	}
+	.back
+	{
+		font-size:16px;
+	}
+}

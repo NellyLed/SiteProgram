@@ -1,0 +1,830 @@
+ body
+{
+	background-image:url(фон_2.jpg);
+	background-attachment:fixed; 
+	background-size:cover;
+	background-size: no-repeat;
+    background-position: center;
+	-webkit-font-smoothing:antialiased;
+	-webkit-overflow-scrolling:touch;
+	margin-top:70px;
+}
+html{
+  cursor: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 512 512' style='enable-background:new 0 0 512.011 512.011;' xml:space='preserve'%3E %3Cpath fill='DeepSkyBlue' d='M434.215,344.467L92.881,3.134c-4.16-4.171-10.914-4.179-15.085-0.019  c-2.011,2.006-3.139,4.731-3.134,7.571v490.667c0.003,4.382,2.685,8.316,6.763,9.92c4.081,1.603,8.727,0.545,11.712-2.667  l135.509-145.92h198.016c5.891,0.011,10.675-4.757,10.686-10.648C437.353,349.198,436.226,346.473,434.215,344.467z'/%3E %3C/svg%3E"), pointer;
+}
+ h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #0a0a0a;
+    font-weight: bold;
+	text-align:center;
+  }
+  h4 {
+    font-size: 18px;
+    color: #303030;
+    font-weight: bold;
+	text-align:justify;
+  }  
+  p
+  {
+	   font-size: 17px;
+	   text-align:justify;
+	   color:#0a0a0a;
+  }
+  h3
+{
+	font-family:'OCR A Std', monospace;
+	font-size: 21px;
+	color: #0a0909;
+	text-align: center;
+	 font-weight: bold;
+	 font-style:italic;
+	 	margin-top:4%;
+}
+  h1
+  {
+	  font-size: 36px;
+    color: #2d2d2d;
+    text-align: center;
+    font-weight: bold;
+	font-family:'Raleway';
+	margin-top:1%;
+
+  }
+  .container-fluid {
+    padding: 1.5% 20%;
+  }
+  .bg-grey {
+
+	background-image:url(фон_1.png);
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+ 
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+.outset {
+    background-color: #ba2d0b; background-image: linear-gradient(319deg, #2d2d2d 10%, #fe7f2d 37%, #ffbf46 100%); 
+    margin-bottom: 5%;
+    width: 100%;
+	border-radius: 3rem;
+	margin-top:2%;
+padding:15% 3%;
+	border:thick solid #2d2d2d;
+opacity:0.95;
+}
+ h5
+ {
+	 font-family:'OCR A Std', monospace;
+	 font-size:20px;
+	 font-weight:bold;
+	 color:#000000;
+	 text-align:center;
+	 text-decoration:underline;
+ }
+ h6
+ {
+	 font-family:'Gill Sans', sans-serif;
+	 font-size:16px;
+	 color:#151719;
+	 text-align:center;
+ }
+ .rf-map,
+.rf-map *{
+    box-sizing: border-box;
+}    
+.rf-map {
+    position: relative;
+    max-width: 980px;
+    margin: auto;
+    padding: 20px;
+}
+.rf-map .district b {
+    position: absolute;
+    z-index: 5;
+    width: 18px;
+    height: 18px;
+    background: rgba(51, 122, 183, 0.9);
+    border-radius: 50%;
+    left: 6px;
+    top: 18px;
+    transition: all 0.3s;
+}
+.rf-map .district span {
+    position: absolute;
+    z-index: 5;
+    top: 20px;
+    left: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Tahoma, sans-serif;
+    line-height: 1;
+    color: #337AB7;
+}
+.rf-map .district {
+    display: none;
+}
+.rf-map.open .district b {
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    width:100%;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);    
+}
+.rf-map.open .district span {
+    color: #FFF;
+}
+.rf-map svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 5px 12px rgba(0, 0, 0, 0.5));    
+}
+.rf-map path {
+    stroke: #FFFFFF;
+    stroke-width: 1;
+    stroke-linejoin: round; 
+}
+.rf-map [data-code] {
+    fill: #337AB7;
+    transition: fill 0.2s;
+}
+.rf-map [data-code]:hover {
+    fill: #0180ef;
+}
+.rf-map .district-text {
+    display: none;
+    position: absolute;
+    z-index: 6;
+    left: 0;
+    top: 60px;
+    width: calc(100% - 20px);
+    height: calc(100% - 90px);
+    padding: 0 20px;
+    overflow: auto;
+    color: #FFF;
+    font-size: 13px;
+    font-family: Verdana, sans-serif;   
+}
+.rf-map .close-district {
+    opacity: 0;
+    z-index: 6;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width: 40px;
+    height: 40px;
+    line-height: 1;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 1s;
+    pointer-events: none;
+}
+.rf-map.open .close-district {
+    opacity: 1;
+    pointer-events: initial;
+}
+.rf-map .district-links {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.rf-map .district-links div {
+    font-size: 13px;
+    font-family: Verdana, sans-serif; 
+    padding: 4px;
+}
+.rf-map .district-links div:after {
+    content: " | ";
+    color: #337AB7;
+}
+.rf-map .district-links div:last-child:after {
+    content: "";
+}
+.dropfill {
+    fill: #337AB7!important;
+}
+.mainfill {
+    fill: #1d4567!important;
+}
+@media (min-width:768px){
+    .rf-map .district b {
+        width: 28px;
+        height: 28px;    
+        left: 6px;
+        top: 28px;
+    }
+    .rf-map .district span {
+        top: 30px;
+        left: 46px;
+        font-size: 20px;
+        font-weight: normal;
+    }
+    .rf-map .district-text {
+        left: 30px;
+        top: 80px;
+        width: calc(100% - 60px);
+        height: calc(100% - 130px);
+        font-size: 16px; 
+    }
+    .rf-map .close-district {  
+        width: 60px;
+        height: 60px;
+        font-size: 60px;
+    }
+    .rf-map .district-links {
+        display: none;
+    }
+}
+/* Цвета регионов */
+/*питер*/
+.rf-map [data-code="RU-SPE"] {
+    fill: #0000BA;
+    cursor: pointer;
+}
+/*липецкая о*/
+.rf-map [data-code="RU-LIP"] {
+    fill: #000096;
+    cursor: pointer;
+}
+/*рязанская о*/
+.rf-map [data-code="RU-RYA"] {
+    fill:  #000096;
+}
+/*брянская о*/
+.rf-map [data-code="RU-BRY"] {
+    fill: #0000BA;
+    cursor: pointer;
+}
+/*Курская о*/
+.rf-map [data-code="RU-KRS"] {
+    fill: #0000BA;
+    cursor: pointer;
+}
+/*Псковская о*/
+.rf-map [data-code="RU-PSK"] {
+    fill:  #0000BA;
+}
+/* мурманская о*/
+.rf-map [data-code="RU-MUR"] {
+    fill: #0000E6;
+    cursor: pointer;
+}
+/*смоленская о*/
+.rf-map [data-code="RU-SMO"] {
+    fill: #0000E6;
+    cursor: pointer;
+}
+/*воронежская о*/
+.rf-map [data-code="RU-VOR"] {
+    fill:  #0000BA;
+}
+/* р Калмыкия*/
+.rf-map [data-code="RU-KL"] {
+    fill: #0000E6;
+    cursor: pointer;
+}
+/* оренбургская о*/
+.rf-map [data-code="RU-ORE"] {
+    fill: #1A1AFF;
+    cursor: pointer;
+}
+/* Архангельская о*/
+.rf-map [data-code="RU-ARK"] {
+    fill:  #0000BA;
+}
+/* Новгородская о*/
+.rf-map [data-code="RU-NVG"] {
+    fill: #1A1AFF;
+    cursor: pointer;
+}
+/* Калужская о */
+.rf-map [data-code="RU-KLU"] {
+    fill: #1A1AFF;
+    cursor: pointer;
+}
+/* Тверская*/
+.rf-map [data-code="RU-TVE"] {
+    fill:  #1A1AFF;
+}
+/* ростовская о*/
+.rf-map [data-code="RU-ROS"] {
+    fill: #0000E6;
+    cursor: pointer;
+}
+/* ивановская о */
+.rf-map [data-code="RU-IVA"] {
+    fill: #0000E6;
+    cursor: pointer;
+}
+/* ленинградская */
+.rf-map [data-code="RU-LEN"] {
+    fill:  #0000BA; 
+}
+/*  Ярославская о*/
+.rf-map [data-code="RU-YAR"] {
+    fill: #0000E6;
+    cursor: pointer;
+}
+/* башкортостан р */
+.rf-map [data-code="RU-BA"] {
+    fill:  #1A1AFF;
+    cursor: pointer;
+}
+/* иркутсткая */
+.rf-map [data-code="RU-IRK"] {
+    fill:  #5555FF;
+}
+/* свердловская о*/
+.rf-map [data-code="RU-SVE"] {
+    fill: #5555FF;
+    cursor: pointer;
+}
+/* татарстан */
+.rf-map [data-code="RU-TA"] {
+    fill: #1A1AFF;
+    cursor: pointer;
+}
+/*красноярский */
+.rf-map [data-code="RU-KYA"] {
+    fill:  #5555FF;
+}
+/* владимирская о*/
+.rf-map [data-code="RU-VLA"] {
+    fill: #1A1AFF;
+    cursor: pointer;
+}
+/*саха */
+.rf-map [data-code="RU-SA"] {
+    fill: #9C9CFF;
+    cursor: pointer;
+}
+/* удмурская р*/
+.rf-map [data-code="RU-UD"] {
+    fill:  #9C9CFF;
+}
+/* тульская о*/
+.rf-map [data-code="RU-TUL"] {
+    fill: #5555FF;
+    cursor: pointer;
+}
+/* ненецкий */
+.rf-map [data-code="RU-NEN"] {
+    fill: #9C9CFF;
+    cursor: pointer;
+}
+/*  приморский к*/
+.rf-map [data-code="RU-PRI"] {
+    fill:  #9C9CFF;
+}
+/*  амурский к*/
+.rf-map [data-code="RU-AMU"] {
+    fill:  #9C9CFF;
+}
+/*  алтайский к*/
+.rf-map [data-code="RU-ALT"] {
+    fill:  #9C9CFF;
+}
+/*  челябинская о*/
+.rf-map [data-code="RU-CHE"] {
+    fill:  #9C9CFF;
+}
+/*  москва*/
+.rf-map [data-code="RU-MOW"] {
+    fill:  #000096;
+}
+/*  московская о*/
+.rf-map [data-code="RU-MOS"] {
+    fill:  #000096;
+}
+
+/*наведение*/
+/*питер*/
+.rf-map [data-code="RU-SPE"]:hover {
+    fill: #0000CF;
+    cursor: pointer;
+}
+/*липецкая о*/
+.rf-map [data-code="RU-LIP"]:hover {
+    fill: #0000A7;
+    cursor: pointer;
+}
+/*рязанская о*/
+.rf-map [data-code="RU-RYA"]:hover {
+    fill:  #0000A7;
+}
+/*брянская о*/
+.rf-map [data-code="RU-BRY"]:hover {
+    fill: #0000CF;
+    cursor: pointer;
+}
+/*Курская о*/
+.rf-map [data-code="RU-KRS"]:hover {
+    fill: #0000CF;
+    cursor: pointer;
+}
+/*Псковская о*/
+.rf-map [data-code="RU-PSK"]:hover {
+    fill:  #0000CF;
+}
+/* мурманская о*/
+.rf-map [data-code="RU-MUR"]:hover {
+    fill: #0000FF;
+    cursor: pointer;
+}
+/*смоленская о*/
+.rf-map [data-code="RU-SMO"]:hover {
+    fill: #0000FF;
+    cursor: pointer;
+}
+/*воронежская о*/
+.rf-map [data-code="RU-VOR"]:hover {
+    fill: #0000CF;
+}
+/* р Калмыкия*/
+.rf-map [data-code="RU-KL"]:hover {
+    fill: #0000FF;
+    cursor: pointer;
+}
+/* оренбургская о*/
+.rf-map [data-code="RU-ORE"]:hover {
+    fill: #1A1AFF;
+    cursor: pointer;
+}
+/* Архангельская о*/
+.rf-map [data-code="RU-ARK"]:hover {
+    fill:  #0000CF;
+}
+/* Новгородская о*/
+.rf-map [data-code="RU-NVG"]:hover {
+    fill: #1A1AFF;
+    cursor: pointer;
+}
+/* Калужская о */
+.rf-map [data-code="RU-KLU"]:hover {
+    fill: #1A1AFF;
+    cursor: pointer;
+}
+/* Тверская*/
+.rf-map [data-code="RU-TVE"]:hover {
+    fill:  #1A1AFF;
+}
+/* ростовская о*/
+.rf-map [data-code="RU-ROS"]:hover {
+    fill: #0000FF;
+    cursor: pointer;
+}
+/* ивановская о */
+.rf-map [data-code="RU-IVA"]:hover {
+    fill: #0000FF;
+    cursor: pointer;
+}
+/* ленинградская */
+.rf-map [data-code="RU-LEN"]:hover {
+    fill:  #0000BA; 
+}
+/*  Ярославская о*/
+.rf-map [data-code="RU-YAR"]:hover {
+    fill: #0000FF;
+    cursor: pointer;
+}
+/* башкортостан р */
+.rf-map [data-code="RU-BA"]:hover {
+    fill:  #1A1AFF;
+    cursor: pointer;
+}
+/* иркутсткая */
+.rf-map [data-code="RU-IRK"]:hover {
+    fill:  #3636FF;
+}
+/* свердловская о*/
+.rf-map [data-code="RU-SVE"]:hover {
+    fill: #3636FF;
+    cursor: pointer;
+}
+/* татарстан */
+.rf-map [data-code="RU-TA"]:hover {
+    fill: #1A1AFF;
+    cursor: pointer;
+}
+/*красноярский */
+.rf-map [data-code="RU-KYA"]:hover {
+    fill:  #3636FF;
+}
+/* владимирская о*/
+.rf-map [data-code="RU-VLA"]:hover {
+    fill: #1A1AFF;
+    cursor: pointer;
+}
+/*саха */
+.rf-map [data-code="RU-SA"]:hover {
+    fill: #7777FF;
+    cursor: pointer;
+}
+/* удмурская р*/
+.rf-map [data-code="RU-UD"]:hover {
+    fill:  #7777FF;
+}
+/* тульская о*/
+.rf-map [data-code="RU-TUL"]:hover {
+    fill: #3636FF;
+    cursor: pointer;
+}
+/* ненецкий */
+.rf-map [data-code="RU-NEN"]:hover {
+    fill: #7777FF;
+    cursor: pointer;
+}
+/*  приморский к*/
+.rf-map [data-code="RU-PRI"]:hover {
+    fill:  #7777FF;
+}
+/*  амурский к*/
+.rf-map [data-code="RU-AMU"]:hover {
+    fill:  #7777FF;
+}
+/*  алтайский к*/
+.rf-map [data-code="RU-ALT"]:hover {
+    fill:  #7777FF;
+}
+/*  челябинская о*/
+.rf-map [data-code="RU-CHE"]:hover {
+    fill:  #7777FF;
+}
+/*  москва*/
+.rf-map [data-code="RU-MOW"]:hover {
+    fill:  #0000A7;
+}
+/*  московская о*/
+.rf-map [data-code="RU-MOS"]:hover {
+    fill:  #0000A7;
+}
+
+.square-block {
+width:30px;
+height:20px; 
+background:#9C9CFF;
+float:left;
+}
+.square1-block {
+width:30px;
+height:20px;
+background:#5555FF;
+float:left;
+}
+.square2-block {
+width:30px;
+height:20px;
+background:#1A1AFF;
+float:left;
+}
+.square3-block {
+width:30px; 
+height:20px; 
+background:#0000E6;
+float:left;
+
+}
+.square4-block {
+width:30px;
+height:20px; 
+background:#0000BA; 
+float:left;
+}
+.square5-block {
+width:30px; 
+height:20px;
+background:#000096;
+float:left;
+}
+.uit
+{
+	font-family:'Arial Narrow', sans-serif;
+	font-size:18px;
+}
+.ui
+{
+	font-family:'Georgia', serif;
+	font-size:20px;
+	text-shadow: #FC0 1px 0 10px;
+}
+.oo
+{
+	text-align:center;
+	font-weight:bold;
+	font-size:20px;
+	
+}
+
+
+.overview{color: red}@keyframes click-wave{0%{height: 40px;width: 40px;opacity: 0.15;position: relative}100%{height: 200px;width: 200px;margin-left: -80px;margin-top: -80px;opacity: 0}}
+
+.option-input{-webkit-appearance: none;-moz-appearance: none;-ms-appearance: none;-o-appearance: none;appearance: none;position: relative;top: 10.3px;right: 0;bottom: 0;left: 0;height: 30px;width: 30px;transition: all 0.15s ease-out 0s;background: #cbd1d8;border: none;color: #fff;cursor: pointer;display: inline-block;margin-right: 0.5rem;outline: none;position: relative;z-index: 1000}
+.option-input:hover{background: #9faab7}
+.option-input:checked{background: #3F6184;}
+.option-input:checked::before{height: 30px;width: 30px;position: absolute;content: "\f111";font-family: "Font Awesome 5 Free";display: inline-block;font-size: 16.7px;text-align: center;line-height: 30px}
+.option-input:checked::after{-webkit-animation: click-wave 0.25s;-moz-animation: click-wave 0.25s;animation: click-wave 0.25s;background: red;content: '';display: block;position: relative;z-index: 100}
+.option-input.radio{border-radius: 50%}
+.option-input.radio::after{border-radius: 50%}
+.line-text{width: 100%;text-align: center;line-height: 0.1em;text-decoration: underline;margin:5% auto;}
+.line-text span{padding: 10px 10px;color: #080808;margin:5% auto;}
+
+.mt-5
+{
+	margin-top:3%;
+	margin-bottom:3%;
+	   background-color: #ba2d0b; background-image: linear-gradient(319deg, #2d2d2d 10%, #fe7f2d 37%, #ffbf46 100%);   
+	opacity:0.95;
+	border-radius: 3rem;
+	border:thick solid #3F6184;
+	padding:3%;
+	width:28%;
+}
+.pi
+{
+	text-align:justify;
+	font-size:16px;
+}
+.rounded-circle{
+border-radius: 100px;
+margin: 5% auto;
+}
+#car img
+{
+	background-size: cover;
+	text-align: center;
+	margin: 5% auto;
+}
+#car h3
+{
+	color: write;
+	font-weight:bold;
+	font-size:24px;
+	font-family:"Courier New";
+	text-align: center;
+}
+#car p
+{
+	font-family: "Lucida Console";
+	color: write;
+	font-size:20px;
+	text-align: center;
+}
+.item
+{
+		margin:3% auto;
+	text-align: center;
+}
+.rounded
+{
+	border-radius: 100%;
+margin: 5% auto;
+padding:0%;
+width:60%;
+}
+
+
+
+.image {
+  display: flex;
+  justify-content: space-around;
+  text-align:center;
+}
+
+.image>span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back
+{
+	font-size: 18px;
+    border: 2px solid #2d2d2d;
+    text-align: center;
+    color: #2d2d2d;
+	padding:0.8%;
+	font-weight:bold;
+	background:transparent;
+	margin:0 auto;
+}
+.back:hover,
+.back:focus,
+.back.active{
+    color: #ffa742;
+    background-color:#2d2d2d;
+	outline:none;
+}
+/*адаптивность*/
+@media (min-width: 275px) and (max-width: 575px){
+	.glyphicon img 
+	{width:10%;}
+	.container-fluid 
+	{padding: 1.5% 4%;}
+	.outset 
+	{ padding:15% 2%;
+	width:70%;
+	margin:0 auto;
+	}
+	.mt-5
+	{width:80%;}
+	.carousel-caption p
+	{font-size:8px;
+	color:white;}
+	.item img
+	{width:90%;}
+	.image p
+	{font-size:10px;}
+	.rounded 
+	{width:100%;}
+	.back
+	{font-size:12px;}
+	h1
+	{font-size:27px;}
+	h2
+	{font-size:20px;}
+	h5
+	{font-size:16px;}
+	h6
+	{font-size:12px;}
+	#car p
+	{font-size:12px;}
+	.oo
+	{font-size:16px;}
+	.pi
+	{font-size:14px; }
+	h3
+	{font-size:18px;}
+	.ui
+	{font-size:16px;}
+	
+}
+@media (min-width: 575px) and (max-width: 815px){
+	.glyphicon img 
+	{width:10%;}
+	.container-fluid 
+	{padding: 1.5% 5%;}
+	.outset 
+	{ padding:15% 0%;
+	width:50%;
+	margin:0 auto;}
+	.mt-5
+	{width:80%;}
+	.carousel-caption p
+	{font-size:12px;
+	color:white;}
+	.item img
+	{width:80%;}
+	.image p
+	{font-size:12px;}
+	.rounded img
+	{width:100%;}
+	.back
+	{font-size:14px;}
+	h1
+	{font-size:30px;}
+	h2
+	{font-size:22px;}
+}
+@media (min-width: 815px) and (max-width: 1100px){
+	.glyphicon img 
+	{width:10%;}
+	.container-fluid 
+	{padding: 1.5% 5%;}
+	.outset 
+	{ padding:15% 0%;}
+	.mt-5
+	{width:60%;}
+	.carousel-caption p
+	{font-size:12px;
+	color:white;}
+	.item img
+	{width:80%;}
+	.image p
+	{font-size:14px;}
+	.back
+	{font-size:16px;}
+}

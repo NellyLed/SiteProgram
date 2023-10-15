@@ -1,0 +1,66 @@
+.img_hover{
+  position:relative;
+  margin:0 auto;
+  width: 20px; 
+  height: 15px; 
+}
+
+.img_hover img {
+  position:absolute;
+  left: 0;
+  top: 0;
+}
+
+.img_hover img.first {
+  opacity:0;
+  filter:alpha (opacity=0);
+}
+
+.img_hover:hover img.first {
+  opacity:1;
+  filter:alpha (opacity=100);
+}
+
+.img_hover:hover img.second, .img_hover img.second:hover { 
+  opacity:0;
+  filter:alpha (opacity=0);
+}
+
+.text_hover:hover {
+    animation:  shake 0.8s;
+    cursor: pointer;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0)
+    }
+    25%{
+        transform: translateX(5px);
+    }
+       
+    50%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+/*background*/   
+
+section .background.points2{
+
+    background: var(--background1) no-repeat center;
+    background-size:cover;
+    
+    color: var(--white);    
+    position: relative;
+}
+
+section .background.points2>img{
+    position: absolute;
+    top: 180px;
+    left: 15%;
+    z-index:10;
+}

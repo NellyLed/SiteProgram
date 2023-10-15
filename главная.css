@@ -1,0 +1,821 @@
+body
+{
+	background-image:url(фон_2.jpg);
+	background-attachment:fixed; 
+	background-size:cover;
+	background-size: no-repeat;
+    background-position: center;
+	-webkit-font-smoothing:antialiased;
+	-webkit-overflow-scrolling:touch;
+	margin-top:70px;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family:'Raleway';
+	font-weight:300;
+	color:#333;
+}
+p{
+	line-height:28px;
+	margin-bottom:25px;
+}
+.centered{
+	text-align:center;
+}
+a{
+	color:#f85c37;
+}
+a:hover,a:focus
+{
+	color:#7b7b7b;
+	text-decoration:none;
+	outline:0;
+}
+hr
+{
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top:1 px solid #ccc;
+	margin:1em 0;
+	padding: 0;
+}
+html{
+  cursor: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 512 512' style='enable-background:new 0 0 512.011 512.011;' xml:space='preserve'%3E %3Cpath fill='DeepSkyBlue' d='M434.215,344.467L92.881,3.134c-4.16-4.171-10.914-4.179-15.085-0.019  c-2.011,2.006-3.139,4.731-3.134,7.571v490.667c0.003,4.382,2.685,8.316,6.763,9.92c4.081,1.603,8.727,0.545,11.712-2.667  l135.509-145.92h198.016c5.891,0.011,10.675-4.757,10.686-10.648C437.353,349.198,436.226,346.473,434.215,344.467z'/%3E %3C/svg%3E"), pointer;
+}
+.navbar
+{
+	font-weight:800;
+	font-size:14px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+.navbar-inverse
+{
+	background:#2d2d2d;
+	border-color:#2d2d2d;
+}
+.navbar-inverse .navbar-nav > .active > a {
+	background: #ffa742;
+}
+.navbar-inverse .navbar-brand {
+	color: #999;
+	font-weight: bolder;
+	font-size:22px;
+	letter-spacing:1px;
+}
+
+#car img
+{
+	width:60%;
+	background-size: cover;
+	margin:3% auto;
+}
+#car h3
+{
+	color: write;
+	font-weight:bold;
+	font-size:24px;
+	font-family:"Courier New";
+}
+#car p
+{
+	font-family: "Lucida Console";
+	color: write;
+	font-size:20px;
+}
+
+
+.w
+{
+	padding-top:35px;
+}
+.w h4
+{
+	font-size:25px;
+	font-family:'Lucida Sans Unicode';
+	padding:5px;
+	background: linear-gradient(to left, #32557f,#ffa742 100%);
+	background-position: 0 100%;
+	background-size: 100% 4px;
+	background-repeat: repeat-x;
+}
+.w p
+{
+	font-family:'Bookman Old Style';
+	font-size:18px;
+	text-align:justify;
+}
+.w h2
+{
+	font-family: "Century Gothic";
+	font-weight: bold;
+	font-size: 30px;
+}
+.w i
+{
+	font-size:22px;
+}
+.sr
+{
+	font-family:"Century Gothic";
+	text-align:center;
+	margin-bottom:2%;
+	margin-top:5%;
+	font-weight:bold;
+	font-size:30px;
+}
+#dg
+{
+	padding-top:50px;
+	text-align:center;
+}
+#dg h4
+{
+	font-size:30px;
+	font-weight:bold;
+	font-family: "Century Gothic";
+	margin-top:5%;
+	margin-bottom:5%;
+}
+#dg h3
+{
+	font-family: "Lucida Console";
+	font-size:20px;
+}
+#dg p
+{
+	font-family: "Lucida Console";
+	font-size:16px;
+}
+#dg img
+{
+	width:50%;
+	height:80%;
+}
+
+.tilt{
+	-webkit-transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	-ms-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+.tilt:hover{
+	-webkit-transform:rotate(10deg);
+	-moz-transform:rotate(10deg);
+	-o-transform:rotate(10deg);
+	-ms-transform:rotate(10deg);
+	transform:rotate(10deg);
+}
+
+.wb
+{
+	padding-top:35px;
+	margin-bottom:5px;
+}
+.wb h4
+{
+	font-size: 35px;
+}
+.wb img
+{
+	width:40%;
+	height:80%;
+	margin:10% auto;
+}
+/*подвал*/
+.footer {
+	
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    background-size: cover;
+    
+}
+
+.second
+{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+    .second h4 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        color: #fff;
+        padding-bottom: 0.5em;
+    }
+ .second h4::after {
+            content: '';
+            background: #f85c3c;
+            width: 40%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+			left:30%;
+        }
+	 .second p {
+		  font-size: 18px;
+		  justify-content:center;
+	 }
+	 
+.third {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: rgb(206,206,206);
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+}
+    .third h4 {
+        font-size: 20px;
+
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        color: #fff;
+        padding-bottom: 0.5em;
+		text-align:center;
+    }
+        .third h4::after {
+            content: '';
+            background: #f85c3c;
+            width: 20%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+
+        }
+    .third li {
+        list-style: none;
+        padding-bottom: 15px;
+		text-align:center;
+    }
+
+.four
+{
+	background-color: rgba(0, 0, 0, 0.2);
+	color: #f85c3c;
+	font-weight:bold;
+	text-align:center;
+	padding-top:0.5%;
+}
+@media screen and (max-width:1000px) {
+    .five button{
+        margin:0 auto;
+		display:block;
+		margin-top:1%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .second {
+        text-align: center;
+    }
+
+        .second h4::after {
+            left: 40%;
+        }
+}
+
+@media screen and (max-width:1000px) {
+    .third {
+        text-align: center;
+    }
+
+        .third h4::after {
+            left: 40% !important;
+        }
+}
+/**/
+.margin {
+    margin-left: 20px;
+}
+
+.line {
+    height:2px;
+    background-color:rgb(206,206,206);
+    width:100%;
+}
+
+.container h1{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+
+.m-b-20 {margin-bottom: 20px;opacity:0;transition: 1s;}
+.mv-f-5:hover+ .m-b-20{
+opacity:1;
+transition: 1s;
+}
+
+.quote {position: relative;}
+.quote blockquote {
+ padding: 0px;
+ border: 0;
+ margin: 0;
+ font-size: 14px;
+ font-style: italic;
+ -webkit-border-radius: 8px;
+ -moz-border-radius: 8px;
+ -ms-border-radius: 8px;
+ border-radius: 8px;
+}
+.quote blockquote p {
+ color: #fff;
+ padding-top: 25px;
+ padding-bottom: 45px;
+ padding-left: 30px;
+ padding-right: 30px;
+}
+.quote blockquote:before {
+ content: "";
+ position: absolute;
+ top: 100%;
+ left: 90px;
+ width: 0;
+ height: 0;
+ border-top: 0.83333em solid #ccc;
+ border-right: 0.86667em solid transparent;
+}
+.quote.green blockquote {
+ background-color:#ffa742;
+}
+.quote.green blockquote:before {
+ border-top-color:#ffa742;
+}
+.quote.dark blockquote {
+ background-color:#2d2d2d;
+}
+.quote.dark blockquote:before {
+ border-top-color:#2d2d2d;
+}
+.quote-footer {
+ margin: 10px 0;
+}
+.quote-footer .quote-author-img img {
+ float: left;
+ max-width: 90px;
+ width: 90px;
+ height: 90px;
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ -ms-border-radius: 50%;
+ border-radius: 50%;
+ margin-left: -5px;
+ margin-top: -40px;
+ position: relative;
+ z-index: 1;
+ padding: 5px;
+ background-color: #fff;
+}
+.quote-footer h4 {
+ font-size: 14px;
+ margin-bottom: 4px;
+}
+.quote-footer p {
+ font-weight: 400;
+ font-style: italic;
+ font-size: 14px;
+}
+.fi_1
+{
+	  padding: 10px;
+	    display: inline-block;
+		 width:100%;
+		 height:400px;
+}
+.fi_3
+{
+		  padding: 10px;
+	    display: inline-block;
+		  width:100%;
+		  height:400px;
+}
+.ff_123
+{
+	  display: none;
+	  width:100%;
+		  height:400px;
+		  
+}
+
+.fi_1:hover .ff_123 {
+  display: block;
+  
+}
+.fi_3:hover .ff_123 {
+  display: block;
+  
+}
+#pp pre
+{
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+	font-weight: bold;
+	font-size:18px ;
+	background-color: rgba(0, 125, 215, 0.1);
+}
+#pp img
+{
+	width:100%;
+	height:100%;
+	margin:0 auto;
+}
+#pp h4
+{
+	font-size:30px;
+	font-weight:bold;
+	font-family: "Century Gothic";
+	margin-top:3%;
+	margin-bottom:3%;
+	text-align:center;
+}
+#pp
+{
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+
+/*адаптивность*/
+@media (min-width: 275px) and (max-width: 575px){
+	#car img
+	{
+		width:100%;
+		background-size: cover;
+		margin:5% auto;
+	}
+	#car h3
+	{
+		font-size:16px;
+	}
+	#car p
+	{
+		font-size:12px;
+	}
+	.navbar
+	{
+		font-size:12px;
+		padding-top:11px;
+		padding-bottom:10px;
+	}
+	.navbar-inverse .navbar-brand {
+		font-size:12px;
+	}
+	.navbar-inverse .navbar-nav  {
+		font-size:12px;
+	}
+	.w
+	{
+		padding-top:25px;
+	}
+	.w h4
+	{
+		font-size:16px;
+		padding:5px;
+	}
+	.w h2
+	{
+		font-size: 20px;
+	}
+	.w i
+	{
+		font-size:16px;
+	}
+	.sr
+	{
+		font-size:20px;
+		margin-bottom:1%;
+		margin-top:3%;
+	}
+	#dg
+	{
+		margin-bottom:0.5%;
+
+	}
+	#dg h4
+	{
+		font-size:20px;
+		margin-top:3%;
+		margin-bottom:3%;
+	}
+	#dg h3
+	{
+		font-size:12px;
+	}
+	#dg p
+	{
+		font-family: "Lucida Console";
+		font-size:14px;
+	}
+	#dg img
+	{
+		width:70%;
+		height:70%;
+	}
+	#pp pre
+	{
+		font-size:14px ;
+		text-align:center;
+	}
+	#pp img
+	{
+		width:100%;
+		height:100%;
+		margin:0 auto;
+	}
+	#pp h4
+	{
+		font-size:22px;
+		margin-top:0%;
+		margin-bottom:0%;
+	}
+	#pp
+	{
+		padding-bottom:0px;
+		padding-top:0px;
+	}
+	.fi_1
+	{
+		padding: 10px;
+		width:100%;
+		font-size:16px;
+		margin-bottom:0;
+		padding-bottom:0;
+		height:30%;
+	}
+	.fi_3
+	{
+		padding: 10px;
+		width:100%;
+		font-size:16px;
+		height:30%;
+	}
+	.ff_123
+	{
+		width:100%;
+		padding: 0;
+		font-size:16px;
+		height:30%;
+	}
+	 .second p {
+		font-size: 14px;
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.infogram-embed{width:100%;}
+}
+
+
+@media (min-width: 575px) and (max-width: 815px){
+	#car img
+	{
+		width:100%;
+		background-size: cover;
+		margin:5% auto;
+	}
+	#car h3
+	{
+		font-size:18px;
+	}
+	#car p
+	{
+		font-size:14px;
+	}
+	.navbar
+	{
+		font-size:12px;
+		padding-top:11px;
+		padding-bottom:10px;
+	}
+	.navbar-inverse .navbar-brand {
+		font-size:12px;
+	}
+	.navbar-inverse .navbar-nav  {
+		font-size:12px;
+	}
+	.w
+	{
+		padding-top:25px;
+	}
+	.w h4
+	{
+		font-size:18px;
+		padding:5px;
+	}
+	.w h2
+	{
+		font-size: 22px;
+	}
+	.w i
+	{
+		font-size:18px;
+	}
+	.sr
+	{
+		font-size:22px;
+		margin-bottom:1%;
+		margin-top:3%;
+	}
+	#dg
+	{
+		margin-bottom:0.5%;
+
+	}
+	#dg h4
+	{
+		font-size:22px;
+		margin-top:3%;
+		margin-bottom:3%;
+	}
+	#dg h3
+	{
+		font-size:14px;
+	}
+	#dg p
+	{
+		font-family: "Lucida Console";
+		font-size:12px;
+	}
+	#dg img
+	{
+		width:26%;
+		height:54%;
+		float:left;
+	}
+	#pp pre
+	{
+		font-size:12px ;
+		text-align:center;
+	}
+	#pp img
+	{
+		width:50%;
+		height:50%;
+		margin:0 auto;
+	}
+	#pp h4
+	{
+		font-size:22px;
+		margin-top:0%;
+		margin-bottom:0%;
+	}
+	#pp
+	{
+		padding-bottom:0px;
+		padding-top:0px;
+	}
+	.fi_1
+	{
+		padding: 10px;
+		width:100%;
+		font-size:16px;
+		margin-bottom:0;
+		padding-bottom:0;
+		height:30%;
+	}
+	.fi_3
+	{
+		padding: 10px;
+		width:100%;
+		font-size:16px;
+		height:30%;
+	}
+	.ff_123
+	{
+		width:100%;
+		padding: 0;
+		font-size:16px;
+		height:30%;
+	}
+	 .second p {
+		font-size: 14px;
+	}
+}
+
+
+@media (min-width: 815px) and (max-width: 1100px){
+	#car img
+	{
+		width:80%;
+		background-size: cover;
+		margin:5% auto;
+	}
+	#car h3
+	{
+		color: write;
+		font-weight:bold;
+		font-size:20px;
+		font-family:"Courier New";
+	}
+	#car p
+	{
+		font-family: "Lucida Console";
+		color: write;
+		font-size:16px;
+	}
+	.navbar
+	{
+		font-size:12px;
+		padding-top:13px;
+		padding-bottom:10px;
+	}
+	.navbar-inverse .navbar-brand {
+		font-size:12px;
+	}
+	.navbar-inverse .navbar-nav  {
+		font-size:12px;
+	}
+	.w
+	{
+		padding-top:30px;
+	}
+	.w h4
+	{
+		font-size:20px;
+		padding:5px;
+	}
+	.w h2
+	{
+		font-size: 25px;
+	}
+	.w i
+	{
+		font-size:20px;
+	}
+	.sr{font-size:25px;	margin-bottom:0%;margin-top:3%;}
+	#dg h4
+	{
+		font-size:25px;
+		margin-top:3%;
+		margin-bottom:3%;
+	}
+	#dg h3
+	{
+		font-size:16px;
+	}
+	#dg p
+	{
+		font-family: "Lucida Console";
+		font-size:14px;
+	}
+	#dg img
+	{
+		width:20%;
+		height:40%;
+		float:left;
+	}
+	#pp pre
+	{
+		font-size:12px ;
+		text-align:center;
+	}
+	#pp img
+	{
+		width:30%;
+		height:30%;
+		margin:0 auto;
+	}
+	#pp h4
+	{
+		font-size:25px;
+		margin-top:0%;
+		margin-bottom:0%;
+	}
+	#pp
+	{
+		padding-bottom:0px;
+		padding-top:0px;
+	}
+	.fi_1
+	{
+		  padding: 10px;
+			 width:100%;
+			 font-size:18px;
+			 margin-bottom:0;
+			 padding-bottom:0;
+					  height:30%;
+	}
+	.fi_3
+	{
+			  padding: 10px;
+			  width:100%;
+			  font-size:18px;
+						  height:30%;
+	}
+	.ff_123
+	{
+		  width:100%;
+			  padding: 0;
+			  font-size:18px;
+			  height:30%;
+	}
+	 .second p {
+			  font-size: 16px;
+	}
+}
